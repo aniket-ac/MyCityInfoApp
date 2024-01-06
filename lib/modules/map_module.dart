@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_map/flutter_map.dart';
 import 'package:subspace/components/maps.dart';
 
 class MapModule extends StatefulWidget {
@@ -14,7 +13,7 @@ class _MapModuleState extends State<MapModule> {
   Widget build(BuildContext context) {
     return Center(
       child:  Container(
-        child: ActualMap(),
+        child: const ActualMap(),
       ),
     );
   }

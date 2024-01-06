@@ -13,7 +13,7 @@ class ActualMap extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlutterMap(
-      options: MapOptions(
+      options: const MapOptions (
         initialCenter: LatLng(13.169644174670779, 77.53513304020579),
         initialZoom: 12.2,
       ),

@@ -1,5 +1,4 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:subspace/modules/list_view_screen.dart';
 import 'package:subspace/modules/map_module.dart';
@@ -43,9 +42,9 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
 
-  static List<Widget> _widgetOptions = [
-    ListViewScreen(),
-    MapModule(),
+  static final List<Widget> _widgetOptions = [
+    const ListViewScreen(),
+    const MapModule(),
     SearchModule()
   ];
 
@@ -58,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',

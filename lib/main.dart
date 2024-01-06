@@ -18,11 +18,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: IntroductionPage(),
+      home: const IntroductionPage(),
       routes: <String, WidgetBuilder>{
-        '#' : (BuildContext contex) => MyHomePage(title: 'My City Info'),
-        'list': (BuildContext context) => ListViewScreen(),
-        'map': (BuildContext context) => MapModule(),
+        '#' : (BuildContext contex) => const MyHomePage(title: 'My City Info'),
+        'list': (BuildContext context) => const ListViewScreen(),
+        'map': (BuildContext context) => const MapModule(),
         'search': (BuildContext context) => SearchModule(),
       },
     );
@@ -40,9 +40,9 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
 
-  static List<Widget> _widgetOptions = [
-    ListViewScreen(),
-    MapModule(),
+  static final List<Widget> _widgetOptions = [
+    const ListViewScreen(),
+    const MapModule(),
     SearchModule()
   ];
 
@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',

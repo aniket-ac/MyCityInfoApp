@@ -21,13 +21,15 @@ dependencies:
   geolocator: ^10.1.0
   flutter_map: ^6.1.0
   url_launcher: ^6.2.1
+  location: ^5.0.3
+  google_maps_flutter: ^2.5.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.1
 
 
 flutter:
@@ -43,6 +45,5 @@ flutter:
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
-
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
