@@ -13,6 +13,6 @@ class AllServices {
     var serviceData = networkHelper.getData(location);
     return serviceData;
   }
-
-
 }
+
+
